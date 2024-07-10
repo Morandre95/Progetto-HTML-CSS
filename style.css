@@ -1,0 +1,249 @@
+:root{
+    --main:#FF3D00;
+    --sec:#FFFF01;
+    --acc:#0100FF;
+    --bg:#000000e4;
+    --bg-text:#000000;
+    --text:#ffffffcc;
+    --hover: #ffe101;
+    
+}
+
+body{
+    font-family: "Kode Mono", monospace;
+    background-color: var(--bg) !important;
+    background-image: url(./media/bg.jpg);
+    color: var(--text);
+}
+
+.bg-black{
+    background-color:rgba(0, 0, 0, 0.3) !important;
+}
+
+img:not(.card-img){
+    border-radius: 20px;
+}
+
+.btn-arcade{
+    background: rgb(255,248,1);
+    background: linear-gradient(180deg, rgba(255, 247, 1, 0.829) 25%, rgba(205,53,141,1) 100%);
+    color: var(--text);
+}
+
+a:not(.text-black){
+    text-decoration: none;
+    color: var(--text);
+}
+
+h1:not(.modal-title), h2{
+    font-family: "Honk", system-ui !important;
+}
+
+.modal-title{
+    color: var(--bg-text);
+}
+
+input{
+    display: flex;
+}
+
+.border {
+    border: var(--bs-border-width)  var(--bg-text) !important;
+  }
+
+.h1{
+    background-color:rgba(0, 0, 0, 0.3) !important;
+    font-size: 100px!important;
+}
+
+/* modifiche per telefoni */
+.navbar-toggler-icon {
+    width: 1em;
+    height: 1em;
+    background-image:url(./media/logo/logo.png);
+    background-color: var(--bg);
+  }
+
+  .navbar-toggler {
+    padding:0;
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 0;
+    border:none;
+    border-radius: 3px solid black;
+  }
+  /* fine modifiche */
+.nav-link{
+    color: var(--text);
+
+}
+.nav-link:hover{
+    color: var(--hover);
+}
+.show{
+    color: var(--text)!important;
+}
+.dropdown-menu{
+    background-color:var(--bg-text);
+    --bs-dropdown-link-hover-bg: none;
+}
+
+.dropdown-item{
+    color: var(--text)!important;
+}
+.dropdown-item:hover {
+    color: var(--hover)!important;
+}
+
+.color-link:hover{
+    color: rgb(255, 191, 0);
+}
+
+.navbar-brand{
+    width: 5%;
+    padding: 0%!important;
+    margin: 0%;
+}
+.logo{
+    width: 100%;
+}
+
+.space-invaders{
+background-image: url(./media/space-invaders.png);
+background-size: cover;
+background-position: center;
+transition: 0.5s;
+}
+
+.fs-h2{
+    font-size: 80px;
+
+}
+
+.fs-h2-2{
+    font-size: 50px;
+}
+.fs-logo{
+    font-size: 80px;
+    list-style: none ;
+    font-style: italic;
+}
+.imgLogo{
+    width: 30%;
+    margin-top: 5rem;
+}
+
+.mt-7{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.fs-custom{
+    font-size: 50px;
+}
+
+.border{
+    background-color:var(--bg-text);
+}
+/* cards */
+.boxSpaceInvaders{
+    height: 50px;
+    width: 50px;
+    background-color: var(--accAustralia);
+    border-radius: 50%;
+    border: 1px solid var(--main);
+}
+
+.donkey-kong{
+    background-image: url(./media/donkey-kong.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+}
+.super-mario{
+    background-image: url(./media/super-mario.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+}
+
+.card{
+    --bs-card-bg:none;
+    border: none;
+    color: var(--text);
+}
+
+.card-img{
+    border: none!important;
+}
+
+/* footer */
+.footer{
+    background:var(--bg-text);
+}
+
+.imgFooter{ 
+    width:100%;
+}
+
+.container-fluid-footer{
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+.border-footer{
+    width:100%;
+}
+
+.press-start {
+    animation: blink 2.5s infinite ;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+  }
+
+@media screen and (max-width:992px){
+    .firstImage{
+        width: 50%
+    }
+
+    span{
+        font-size: 50px;
+    }
+    .h1,.fs-h2,.fs-h2-2{font-size: 50px!important;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .navbar-toggler{
+       background-color: var(--text)!important;
+        }
+        .autore{
+            width: 100%!important;
+            height: 100%!important;
+            padding:20px;
+        }
+
+}
+
+/* css cards */
+.autore{
+    width: 600px;
+    height: 300px;
+}
